@@ -1,5 +1,7 @@
 # Forum Frontend - A one week group project
 
+Made during Buutti's Web-dev Front End course. Check out [my selected few works](https://github.com/Mikku96/Front-End-WebDev-Assignments) from the course, or the [end project](https://github.com/Mikku96/FlightPriceComparisonFrontEnd) made with Scrum mindset in three weeks.
+
 <img src="img_pvkirja/sample.png" width=800>
 
 ## Description: 
