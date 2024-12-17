@@ -1,0 +1,572 @@
+/* OVERALL BODY SETTINGS */
+
+body {
+    background-image: url("../images/background.png");
+    background-blend-mode:soft-light;
+    background-color: #181c50;
+}
+
+#content {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    max-width: 85%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: auto;
+    border: solid black 0.1px;
+}
+
+/* SINGLE MESSAGE SEARCH BOX LOGIC*/
+
+@media (max-width: 578px) {
+    .logo {
+      text-align:center;
+    }
+  }
+
+#singleMessageSearch {
+    padding: 5px;   
+    margin-right: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+@media (max-width: 578px) {
+    .searchBar {
+        display: flex;
+        text-align:center;
+        justify-content:center;
+    }
+}
+
+#searchMessageForm {
+    border: 2px solid #f7f9f9;
+    background-color: rgba(14, 9, 3, 0.705);
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+#searchIDLabel {
+    color:white;
+}
+
+.singleMessageBox {
+    padding-left:10px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:2px;
+    border-radius: 10px;
+    border: solid #d6d8d8 0.1pc;
+    background-color: #f7f9f9;
+}
+
+#errorIDInput {
+    color: red;
+    font-size: 20pt;
+}
+
+/* MESSAGE BUTTON SETTINGS */
+
+#messageButtons {
+    background-color:#181c50;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.selectionButton {
+    border-radius: 10px;
+    border: solid black 2pt;
+}
+
+@media (max-width: 1127px) {
+    .selectionButton {
+        height:50px;
+        align-content: center;
+    }
+}
+
+@media (max-width: 706px) {
+    .selectionButton {
+        height:75px;
+        align-content: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .selectionButton {
+        height:100px;
+        align-content: center;
+    }
+}
+
+@media (max-width: 512px) {
+    .selectionButton {
+        font-size: 8pt;
+        height:100px;
+        align-content: center;
+    }
+}
+
+.selectionButton:hover {
+    opacity: 50%;
+    cursor: pointer;  
+}
+
+#allMessages {
+    background-color:purple;
+}
+
+#redTeamMessages {
+    background-color:rgb(136, 0, 7);
+}
+
+
+#blueTeamMessages {
+    background-color:rgb(0, 132, 194);
+}
+
+#greenTeamMessages {
+    background-color:rgb(0, 128, 43);
+}
+
+/* SITE HEAD SETTINGS */
+/* Includes: Name, Navigation, Login */
+
+#welcomeMessage {
+    padding-left: 10px;
+    border: #f9efd6 solid;
+    background-color: #faf6e2;
+    color: #8a6d3b;
+    margin: 5px;
+    width: 100%;
+    height: 220px;
+    overflow: auto;
+}
+
+/*LOGIN SETTINGS*/
+
+@media (min-width: 578px) {
+    .loginCol {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+@media (max-width: 578px) {
+    .loginCol {
+        display: flex;
+        text-align:center;
+        justify-content:center;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+#loginForm {
+    width:200px;
+    margin: 10px;
+    border: 3px solid #ffae00;
+}
+
+#loginContainer {
+    height: 250px;
+    display:grid;
+    padding: 5px;   
+    background-color: rgba(14, 9, 3, 0.705);
+}
+
+#LogIn {
+    background-color: #181c50;
+    border-radius: 10px;
+    color: white;
+    text-align:center;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+#usernameInput[type=text], #passwordInput[type=password] {
+    width: 100%;
+    height: 50%; 
+    margin: 8px 0;  
+    padding: 6px 5px;   
+    display: inline-block;   
+    border: 2px solid rgb(255, 51, 0);   
+    box-sizing: border-box; 
+}
+
+#usernameLabel, #passwordLabel {
+    color: red;
+}
+
+#loginButton {   
+    background-color: #ce8600;   
+    width: 100%;  
+     color: black;   
+     padding: 15px;   
+     margin-bottom: 10px;   
+     border: none;   
+     cursor: pointer;   
+}
+
+#loginButton:hover {   
+    opacity: 0.7;   
+}
+
+/*LOGOUT*/
+
+#logoutText {
+    color: white;
+    text-align:center;
+    height: 25px;
+}
+
+#logoutContainer {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgba(14, 9, 3, 0.705);
+}
+
+#logoutButton {   
+    background-color: #ce0000;   
+    width: 100%;  
+     color: black;   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer;   
+}
+
+/*NAVIGATION SETTINGS*/
+
+.pageNav {
+    padding-left: 10px;
+    padding: 1%;
+    width: 100%;
+    display: grid;
+    /*grid-template-columns: 5%;*/
+    outline: 2px solid black;
+}
+
+#pageNavSwitches {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(11, 1fr);
+    align-content: center;
+    align-items: center;
+}
+
+.switch {
+    width: 33px;
+    height: 33px;
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid black;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageNumber {
+    width: 100px;
+}
+
+#arrow {
+    font-size: 33px;
+}
+
+.next {
+    width: auto;
+    height: 33px;
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid black;
+    color: black;
+}
+
+.switch:hover {
+    background-color: rgb(28, 20, 75);
+    color: white;
+    cursor: pointer;  
+}
+
+@media (max-width: 768px) {
+    .switch {
+        width:22px;
+        height:22px;
+         text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+
+        width:50px;
+        height:20px;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    #pageNumber {
+        font-size: 16px;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pageNavSwitches {
+        text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .switch, .next {
+        padding: 4px;
+        font-size: 12px;
+      
+    }
+    #pageNumber {
+        font-size: 14px;
+    }
+}
+
+/*CONTENT SETTINGS*/
+/*Includes: Divider, Sent Messages*/
+
+.divider {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #181c50;
+    color: white;
+    padding-top:1px;
+    margin-top: 10px;
+    text-align: right;
+    padding-right:0.5%;
+}
+
+.parameters{
+    display: flex;
+    margin: 10px;
+}
+
+.parametersChild{
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    align-content: stretch;
+}
+
+.flex_item{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#messageContainer{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#profileContainer {
+    align-items: center;
+    max-width: 300px;
+    display:grid;
+    border-radius: 10px;
+    border: solid #d6d8d8 0.1pc;
+    background-color: #f7f9f9;
+    grid-template-rows: 150px 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#profilePicture {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: solid black 0.1pc;
+}
+
+.userName {
+    font-size: 20pt;
+    text-align:center;
+    color: rgb(0, 174, 255)
+}
+
+.userName:hover {
+    color:black;
+    cursor:pointer;
+}
+
+#messageBox {
+    padding:10px;
+    border-radius: 10px;
+    border: solid #d6d8d8 0.1pc;
+    background-color: #f7f9f9;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.messageModButtons {
+    color:white;
+    margin-top:10px;
+    margin-bottom:2px;
+    margin-left: 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+.editDeleteButton {
+    color: white;
+    background-color: #181c50;
+    border: solid black 1px;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.editDeleteButton:hover {
+    opacity: 50%;
+    cursor: pointer;  
+}
+
+/*NEW MESSAGE SETTINGS*/
+
+#newMessageBox {
+    padding-left:10px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:2px;
+    border-radius: 10px;
+    border: solid #d6d8d8 0.1pc;
+    background-color: #f7f9f9;
+}
+
+#textInputArea {
+    width: 100%;
+    background-color: #f7f9f9;
+    border: none;
+}
+
+#sendButton {
+    background-color: #181c50;
+    border: solid black 1px;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+#sendButton:hover {
+    opacity: 50%;
+    cursor: pointer;  
+}
+
+
+/*PAGE END SETTINGS*/
+
+
+#siteEnd {
+    background-color: #181c50;
+    height:40px;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#options {
+    margin-top:2px;
+    margin-bottom:2px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#themeButton {
+    padding-left:5px;
+    padding-right:5px;
+    color:white;
+    border: solid white
+}
+
+#themeButton:hover {
+    opacity: 50%;
+    cursor: pointer;  
+}
+
+#languageButton {
+    padding-left:5px;
+    padding-right:5px;
+    color:white;
+    border: solid white
+}
+
+#languageButton:hover {
+    opacity: 50%;
+    cursor: pointer;  
+}
+
+#toTopSection {
+    margin-top:5px;
+    margin-right: 10px;
+    display:flex;
+    align-content: flex-end;
+    color:white;
+    justify-content: end;
+}
+
+
+#toTopButton {
+    display:flex;
+    font-weight:bold;
+    font-size: 20pt;
+    width:30px;
+    height:30px;
+    color:white;
+    border: solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#toTopButton:hover {
+    opacity: 50%;
+    cursor: pointer;  
+}
+
+body.dark-theme {
+    background-color: black;
+}
+
+.dark-container {
+    background-color: #888888;
+}
+
+body.dark-theme {
+    background-image: url("../images/background-dark.png");
+    background-color: #0a0a0a;
+}
+

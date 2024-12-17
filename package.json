@@ -1,0 +1,9 @@
+{
+    "name": "forum-frontend",
+    "version": "1.0.0",
+    "description": "Starttipaketti Ohjelmistokehitykseen Jyväskylä 2024 - First Team Project",
+    "main": "index.js",
+    "author": "Red Team",
+    "license": "ISC",
+    "type": "module"
+}
