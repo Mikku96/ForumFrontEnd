@@ -1,4 +1,6 @@
-# Forum Frontend
+# Forum Frontend - A one week group project
+
+<img src="img_pvkirja/sample.png" width=800>
 
 ## Description: 
 
@@ -32,6 +34,7 @@ forum frontend
 .   └── scriptFlow.png    # file dependencies
 .
 ├── package.json          # developer dependencies
+├── paivakirja.md         # developer thoughts and notes from meetings (in Finnish)
 ├── README.md             # this file
 └── userkeys.js           # user keys
 ``` 
@@ -52,6 +55,6 @@ just messages written by members of one group. Notice that by clicking a usernam
 inputting the id of the message into the input field in the upper right corner. You can see the id
 of the message in the blue bar located above each message.
 
-Normally you are allowed to sign in only as a member of red team.
+Normally you are allowed to sign in as a member of red team.
 userKeys.js holds the userdata as this project did not enable us to use a Back End for logging in.
 **For this repository, these keys are not provided.**
